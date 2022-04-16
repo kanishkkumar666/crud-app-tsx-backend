@@ -1,0 +1,106 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\KANISHK KUMAR\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\KANISHK KUMAR\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\KANISHK KUMAR\bin;C:\Python39\Scripts;C:\Python39;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\KANISHK KUMAR\AppData\Local\Microsoft\WindowsApps;C:\Users\KANISHK KUMAR\AppData\Roaming\Composer\vendor\bin;C:\Users\KANISHK KUMAR\AppData\Roaming\npm;C:\Users\KANISHK KUMAR\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.1.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\KANISHK KUMAR\AppData\Local\Yarn\Cache\v6\npm-date-fns-2.28.0-9570d656f5fc13143e50c975a3b6bbeb46cd08b2-integrity\node_modules\date-fns\.yarn-tarball.tgz'
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "0.0.1",
+    "description": "",
+    "author": "",
+    "private": true,
+    "license": "UNLICENSED",
+    "scripts": {
+      "prebuild": "rimraf dist",
+      "build": "nest build",
+      "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+      "frontend": "npm start --prefix ../crud-app",
+      "start": "nest start",
+      "both": "concurrently \"npm run start\" \"npm run frontend\"",
+      "start:dev": "nest start --watch",
+      "start:debug": "nest start --debug --watch",
+      "start:prod": "node dist/main",
+      "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+      "test": "jest",
+      "test:watch": "jest --watch",
+      "test:cov": "jest --coverage",
+      "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+      "test:e2e": "jest --config ./test/jest-e2e.json"
+    },
+    "dependencies": {
+      "@nestjs/common": "^8.0.0",
+      "@nestjs/core": "^8.0.0",
+      "@nestjs/mongoose": "^9.0.2",
+      "@nestjs/platform-express": "^8.0.0",
+      "@nestjs/swagger": "^5.1.5",
+      "class-transformer": "^0.4.0",
+      "class-validator": "^0.13.2",
+      "fastify-swagger": "^4.13.1",
+      "mongoose": "^6.1.5",
+      "reflect-metadata": "^0.1.13",
+      "rimraf": "^3.0.2",
+      "rxjs": "^7.2.0",
+      "swagger-ui-express": "^4.3.0"
+    },
+    "devDependencies": {
+      "@nestjs/cli": "^8.0.0",
+      "@nestjs/schematics": "^8.0.0",
+      "@nestjs/testing": "^8.0.0",
+      "@types/express": "^4.17.13",
+      "@types/jest": "27.0.2",
+      "@types/node": "^16.0.0",
+      "@types/supertest": "^2.0.11",
+      "@typescript-eslint/eslint-plugin": "^5.0.0",
+      "@typescript-eslint/parser": "^5.0.0",
+      "concurrently": "^7.0.0",
+      "eslint": "^8.0.1",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-prettier": "^4.0.0",
+      "jest": "^27.2.5",
+      "prettier": "^2.3.2",
+      "source-map-support": "^0.5.20",
+      "supertest": "^6.1.3",
+      "ts-jest": "^27.0.3",
+      "ts-loader": "^9.2.3",
+      "ts-node": "^10.0.0",
+      "tsconfig-paths": "^3.10.1",
+      "typescript": "^4.3.5"
+    },
+    "jest": {
+      "moduleFileExtensions": [
+        "js",
+        "json",
+        "ts"
+      ],
+      "rootDir": "src",
+      "testRegex": ".*\\.spec\\.ts$",
+      "transform": {
+        "^.+\\.(t|j)s$": "ts-jest"
+      },
+      "collectCoverageFrom": [
+        "**/*.(t|j)s"
+      ],
+      "coverageDirectory": "../coverage",
+      "testEnvironment": "node"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
